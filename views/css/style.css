@@ -30,9 +30,12 @@ form {
 }
 
 .mover {
+  transform: translateZ();
+
   position: fixed;
   width: 256px;
   z-index: -1;
+  backface-visibility: hidden;
 }
 
 .randomPizzaContainer {
