@@ -28,7 +28,7 @@ form {
     position: fixed;
     width: 256px;
     z-index: -1;
-    /* added backface-visibility: hidden*/
+    /* added backface-visibility: hidden to help with 60 FPS*/
     backface-visibility: hidden;
 }
 .randomPizzaContainer {
