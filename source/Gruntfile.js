@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        // image optimization
         imagemin: {
             dynamic: {
                 options: {
@@ -14,14 +15,24 @@ module.exports = function(grunt) {
                     dest: 'dist'
                 }]
             }
+        },
+        // minify css
+        cssmin: {
+          target: {
+            files: [{
+              expand: true,
+              src: ['css/*.*'],
+              dest: 'dist',
+              ext: '.min.css'
+            }]
+          }
         }
     });
 
     // Load plugins
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    //  grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Task lists
-    // grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
-    grunt.registerTask('default', ['imagemin']);
+    grunt.registerTask('default', ['imagemin', 'cssmin']);
 };

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Required project assets downloaded from https://github.com/udacity/frontend-nanodegree-mobile-portfolio.
 
 For Google PageSpeed Insights.........see below
@@ -22,6 +21,8 @@ Resized and compressed pizzeria.jpg using http://resizeimage.net/.
 
 
 Used grunt-contrib-imagemin to minify source images.
-=======
-To be updated.
->>>>>>> 623ae6c7c75a751fc0a1f0a4d83d94f100eb7f93
+
+
+Removed views/images/pizzeria, in the source folder because of its 2,315 KB size and replaced it with a resized and compressed jpg.
+ 
+
