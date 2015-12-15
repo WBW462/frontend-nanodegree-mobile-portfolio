@@ -18,21 +18,65 @@ module.exports = function(grunt) {
         },
         // minify css
         cssmin: {
-          target: {
-            files: [{
-              expand: true,
-              src: ['css/*.*'],
-              dest: 'dist',
-              ext: '.min.css'
-            }]
-          }
-        }
+            target: {
+                files: [{
+                    expand: true,
+                    src: ['css/*.*', 'views/css/*.*'],
+                    dest: 'dist',
+                    ext: '.min.css'
+                }]
+            }
+        },
+        uglify: {
+            my_target: {
+                options: {
+                    beautify: true,
+                    compress: {}
+                },
+                files: [{
+                    expand: true,
+                    src: ['js/*.*', 'views/js/*.*'],
+                    dest: 'dist',
+                    ext: '.min.js'
+                }]
+            },
+            my_advance_target: {
+                options: {
+                    beautify: {
+                        width: 80,
+                        beautify: true
+                    }
+                },
+                files: [{
+                    expand: true,
+                    src: ['js/*.*', 'views/js/*.*'],
+                    dest: 'dist',
+                    ext: '.min.js'
+                }]
+            }
+        },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: [{
+                    expand: true,
+                    dest: 'dist',
+                    src: ['*.html', 'views/*.html*'],
+                    ext: '.min.html'
+                }]
+            }
+        },
     });
 
     // Load plugins
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
     // Task lists
-    grunt.registerTask('default', ['imagemin', 'cssmin']);
+    grunt.registerTask('default', ['imagemin', 'cssmin', 'uglify', 'htmlmin']);
 };
