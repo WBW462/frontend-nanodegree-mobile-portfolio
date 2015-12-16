@@ -29,3 +29,6 @@ Inserted Cache-Control to cache and resuse previously fetched resources to impro
 Application should run by opening the index.html file with a browser.
 When Bill's Pizzaria is selected, a new webpage will load allowing you to choose the types of pizzas available and size.  A pizza slider lever is available to 
 give an idea of the size of the pizza.
+
+This work is of mine own, modifying provided assets and researching ideas and problems from other Udacity students and Udacity instructors in the discussino forums 
+and various websites, such as MDN, Google, JShint, etc. 
