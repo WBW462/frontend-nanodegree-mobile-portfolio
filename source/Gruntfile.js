@@ -55,28 +55,28 @@ module.exports = function(grunt) {
                 }]
             }
         },
-      //  htmlmin: {
-      //      dist: {
-      //          options: {
-      //              removeComments: true,
-      //              collapseWhitespace: true
-      //          },
-      //          files: [{
-      //              expand: true,
-      //              dest: 'dist',
-      //              src: ['*.html', 'views/*.html*'],
-      //              ext: '.min.html'
-      //          }]
-      //      }
-      //  },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: [{
+                    expand: true,
+                    dest: 'dist',
+                    src: ['*.html', 'views/*.html*'],
+                    ext: '.min.html'
+                }]
+            }
+        },
     });
 
     // Load plugins
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    //grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
     // Task lists
-    grunt.registerTask('default', ['imagemin', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['imagemin', 'cssmin', 'uglify', 'htmlmin']);
 };
