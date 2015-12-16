@@ -27,5 +27,5 @@ Added "backface-visibility:hidden" to improve paint times for 60 FPS, views/css/
 Inserted Cache-Control to cache and resuse previously fetched resources to improve Performance.
 
 Application should run by opening the index.html file with a browser.
-When Bill's Pizzaria is selected, a new webpage will load allowing you to choose the types of pizzas available and size.  A pizza slider lever is avaiable to 
+When Bill's Pizzaria is selected, a new webpage will load allowing you to choose the types of pizzas available and size.  A pizza slider lever is available to 
 give an idea of the size of the pizza.
