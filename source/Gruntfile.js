@@ -27,6 +27,7 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        // minfiy js
         uglify: {
             my_target: {
                 options: {
@@ -55,6 +56,7 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        // minify html
         htmlmin: {
             dist: {
                 options: {
