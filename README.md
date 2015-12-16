@@ -1,7 +1,13 @@
 Required project assets downloaded from https://github.com/udacity/frontend-nanodegree-mobile-portfolio.
 
+Obtained my own picture to replace Cam's profile pic.
+Cropped and resized pic using http://resizeimage.net/.
+Resized and compressed pizzeria.jpg using http://resizeimage.net/.
+Removed original pizzeria.jpg from source folder because of errors when optimizing images.
+Changed references to Cam to Bill to personalize this portfolio.
+
 For Google PageSpeed Insights.........see below
-Created async script requests in the index.html file.
+Created async script requests in the index.html, project-2048.html, project-mobile.html and project-webperf.html files.
 Used specific media types such as print and media to strategically load our CSS (need to find).
 Inlined CSS into the index.html.
 Minified CSS (still to be done).
@@ -16,11 +22,17 @@ Modified the main.js function updatePostions, removed some variables from inside
 For Change Pizza Sizes.........see below
 Modified the main.js function changePizzaSizes, remove some variables from inside the For Loop and used getElementsByClass instead of querySelectorAll.
 
-Replaced profilepic.jpg with my own picture, resized using http://resizeimage.net/.
-Resized and compressed pizzeria.jpg using http://resizeimage.net/.
+
 
 
 Used grunt-contrib-imagemin to minify source images.
+
+Tried minifying files and ran into problems.  Unable to perform PageSpeed testing, Ngrok, starting showing errors.
+Unmified files and things worked ok.  
+
+Used jscompress.com for minifying js files.
+Used cleancss.com for minifying and compressing css files.
+
 
 
 Removed views/images/pizzeria, in the source folder because of its 2,315 KB size and replaced it with a resized and compressed jpg.
