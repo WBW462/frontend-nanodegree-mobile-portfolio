@@ -107,7 +107,7 @@ _For 60 FPS on Browser Scroll:_
 
 Modified the main.js function updatePostions, removed some variables from inside the For Loops and used getElementsByClass instead of querySelectorAll.
 
-_For Change Pizza Sizes:_
+_For Change Pizza Sizes:
 
 Modified the main.js function changePizzaSizes, remove some variables from inside the For Loop and used getElementsByClass instead of querySelectorAll.
 
