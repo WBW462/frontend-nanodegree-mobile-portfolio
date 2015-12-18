@@ -1,3 +1,5 @@
+# FRONTEND-NANODEGREE-MOBILE PORTFOLIO
+
 # ABOUT:
 Front-End Web Developer Nanodegree Website Optimization, is a project within the Udacity Front-End Web Developer Nanodegree.  In this project, I optimize a provided website with a number of optimization and performance-related issues so that it achieves a target PageSpeed score of 90 and runs at 60 frames per second.  Required project assets were provided and downloaded from https://github.com/udacity/frontend-nanodegree-mobile-portfolio.
 
@@ -81,9 +83,9 @@ _project-mobile (html)_
 
 _project-webperf (html)_
 
-**NOTE**--the "dist (folder)" is created when Grunt is run in the Command Prompt window and is not an original source folder.  Running
+**NOTE**--the **dist (folder)** is created when Grunt is run in the Command Prompt window and is not an original source folder.  Running
 Grunt processes the code in the Gruntfile, using the Grunt packages in the package.json file.  These packages are installed after
-installing grunt-cli, see above, INSTALLATION: Grunt.  Gruntfile.js and package.json are also not original source files.  These files with the "dist (folder)" were created to created to meet or exceed specifications for this project.
+installing grunt-cli, see above, INSTALLATION: Grunt.  Gruntfile.js and package.json are also not original source files.  These files with the **dist (folder)** were created to created to meet or exceed specifications for this project.
 
 # VIEWING:
 To view on your computer open the index.html file.  PageSpeed scores can be viewed by entering url provide by running ngrok.exe at
