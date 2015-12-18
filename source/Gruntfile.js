@@ -66,8 +66,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     dest: 'dist',
-                    src: ['*.html', 'views/*.html*'],
-                    ext: '.min.html'
+                    src: ['*.html', 'views/*.html*']
                 }]
             }
         },
